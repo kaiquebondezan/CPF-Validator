@@ -43,9 +43,9 @@ Exemplo: http://localhost:8000/cpfvalidator.php?cpf=1234567815
 
 Exemplo de retorno: 
 
-`{
+```{
   "cpf": "1234567815",
   "valido": {
     "erro": "O CPF informado tem menos de 11 dígitos."
   }
-}`
+}```
