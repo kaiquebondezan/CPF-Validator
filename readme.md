@@ -48,4 +48,4 @@ Exemplo de retorno:
   "valido": {
     "erro": "O CPF informado tem menos de 11 dígitos."
   }
-}```
+}
