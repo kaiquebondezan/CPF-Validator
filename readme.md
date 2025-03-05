@@ -1,4 +1,4 @@
-# CPF Validator
+# ValidaCPF
 
 Um script PHP simples para validar CPFs.
 
@@ -39,4 +39,4 @@ Para usar este script, basta chamar a função `validarCPF($cpf)` passando o CPF
 
 2. Configure o request (GET ou POST) utilizando o Postman ou algum programa similar e defina a URL:
 
-http://localhost:8000/cpfvalidator.php?cpf=1234567815
+Exemplo: http://localhost:8000/cpfvalidator.php?cpf=1234567815
