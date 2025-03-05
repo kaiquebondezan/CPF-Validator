@@ -24,7 +24,11 @@ Para usar este script, basta chamar a função `validarCPF($cpf)` passando o CPF
 #### Retorno
 
 - **`true`** se o CPF for válido.
-- **`false`** se o CPF for inválido.
+- **`false`** se o CPF for inválido, junto com uma mensagem de erro explicando o motivo:
+
+  - **Erro**: O CPF informado tem mais de 11 dígitos.
+  - **Erro**: O CPF informado tem menos de 11 dígitos.
+  - **Erro**: O CPF informado contém todos os dígitos iguais.
 
 ## Teste
 
@@ -32,3 +36,7 @@ Para usar este script, basta chamar a função `validarCPF($cpf)` passando o CPF
 
    ```bash
    php -S localhost:8000
+
+2. Configure o request (GET ou POST) utilizando o Postman ou algum programa similar e defina a URL:
+
+http://localhost:8000/cpfvalidator.php?cpf=1234567815
