@@ -28,3 +28,10 @@ Retorno
     true se o CPF for válido.
 
     false se o CPF for inválido.
+
+Teste
+
+    Suba o servidor local utilizando o comando padrão (php -S localhost:8000).
+
+    Configure o request (GET ou POST) pelo Postman ou algum programa parecido e configure a url ex: http://localhost:8000/cpfvalidator.php?cpf=1234567815
+    
