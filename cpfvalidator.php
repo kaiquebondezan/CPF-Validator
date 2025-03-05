@@ -2,8 +2,14 @@
 header('Content-Type: application/json');
 
 function validarCPF($cpf) {
-    if (strlen($cpf) != 11 || preg_match('/^(\d)\1*$/', $cpf)) {
-        return false;
+    $cpf = preg_replace('/[^0-9]/', '', $cpf);
+    
+    if (strlen($cpf) > 11) {
+        return ['erro' => 'O CPF informado tem mais de 11 dígitos.'];
+    } elseif (strlen($cpf) < 11) {
+        return ['erro' => 'O CPF informado tem menos de 11 dígitos.'];
+    } elseif (preg_match('/^(\d)\1*$/', $cpf)) {
+        return ['erro' => 'O CPF informado contém todos os dígitos iguais.'];
     }
     
     // Validação do primeiro dígito
