@@ -2,7 +2,7 @@
 
 Um script PHP simples para validar CPFs.
 
-Este script é projetado para validar números de CPF (Cadastro de Pessoas Físicas). Ele remove caracteres não numéricos do CPF, verifica se o CPF tem 11 dígitos e se não contém todos os dígitos iguais. Além disso, calcula os dígitos verificadores para garantir a validade do CPF.
+Ele remove caracteres não numéricos do CPF, verifica se o CPF tem 11 dígitos e se não contém todos os dígitos iguais. Além disso, calcula os dígitos verificadores para garantir a validade do CPF.
 
 ## Funcionalidades
 
